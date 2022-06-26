@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(175, 35, 112);
+  color: rgb(211, 236, 226);
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+header > p {
+  text-align: right;
+}
+
+header > p,
+header > h1 {
+  margin-bottom: 0;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 27vh;
+  align-self: center;
+  letter-spacing: 0.3rem;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-block-end: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+}
+
+.project-item {
+  border: 1.3px solid #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: baseline;
+  width: 18%;
+}
+
+.project-item:hover {
+  background-color: #fff;
+  color: rgb(175, 35, 112);
+}
+
+.biog {
+  max-width: 65%;
+}
+
+.biog > p {
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 19vw;
+  }
+
+  .project-container {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .project-item {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 699px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 19vw;
+    align-self: center;
+    letter-spacing: 0.3rem;
+  }
+}
