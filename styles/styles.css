@@ -84,6 +84,9 @@ section {
   .project-item {
     width: 46%;
   }
+  .biog {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 699px) {
   .project-container {
