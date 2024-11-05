@@ -32,6 +32,10 @@ nav > ul {
   margin-bottom: 0;
 }
 
+p > a {
+  color:#d7d570
+}
+
 .title {
   font-size: 27vh;
   align-self: center;
